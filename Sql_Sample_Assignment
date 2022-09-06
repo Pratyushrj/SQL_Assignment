@@ -7,9 +7,11 @@ CREATE TABLE Customers(
    Address varchar(60) null,
    City char(15) null,
    Phone char(24) null,
-   Fax char(24) null,
-   
+   Fax char(24) null,   
 );
+
+-- Question 2
+------------------------------------------------------------
 --select * from Customers
 CREATE TABLE Orders(
 OrderId integer not null,
@@ -24,17 +26,15 @@ Quantity integer null,
 select * from Customers
 select * from Orders
 
--- Question 2
+-- Question 3
 -------------------------------------------------------------------
 select * from Orders
 --chage datatype of existing column
 alter table Orders alter column shipregion varchar(40)null
 
--- Question 3
+-- Question 4
 ----------------------------------------------------------------------
 select * from Orders
 --drop column
 alter table Orders drop column shipregion
 
--- Question 4
------------------------------------------------------------------------
